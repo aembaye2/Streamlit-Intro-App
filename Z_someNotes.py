@@ -1,0 +1,28 @@
+# How to get ready Github Codespace after you get to the latter (there are some steps to get to codespaces from the URL or github login)
+
+# Open terminal
+
+# Check if you have already gotten conda environment
+conda env list
+
+# Activate the env't if it existst. For example if it its name is "myenv", run the f/g
+conda activate myenv
+
+# If you don't have an env't, create one, for example, myenv2
+conda create -n myenv2 python=3.11
+
+# after the creation, so that it will take effect, run the f/g:
+conda init 
+
+# close the terminal the change to take effect and reopen new one, then run
+
+conda activate myenv2
+
+# Now instead of "base" you will see "myenv2" in the path of your directory. Then run the following and wait until it installs all the packages listed under the requirement.txt file
+pip install -r requirements.txt
+
+# Then run the following and then click "open in browser" link
+streamlit run main2.py
+
+# if this doesnot work, try either of the next
+python -m  streamlit run main2.py 
