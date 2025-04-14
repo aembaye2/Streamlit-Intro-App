@@ -3,7 +3,7 @@
 # Open terminal
 
 # Check if you have already gotten conda environment
-conda env list
+conda list env
 
 # Activate the env't if it existst. For example if it its name is "myenv", run the f/g
 conda activate myenv

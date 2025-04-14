@@ -3,9 +3,16 @@ import wooldridge as woo
 import streamlit as st
 import statsmodels.formula.api as smf
 import scipy.stats as stats
+import pandas as pd
 
-# load data:
-wage1 = woo.dataWoo('wage1')
+# load dataset from package:
+#wage1 = woo.dataWoo('wage1')
+
+# Write the data to CSV in the codespaces workspace
+#wage1.to_csv('wage1.csv', index=False)  # index=False prevents writing row numbers
+
+# Load the dataset from workspace
+wage1 = pd.read_csv('wage1.csv')
 
 # Display the first few rows
 st.subheader("First 5 Rows of the Dataset")
