@@ -1,0 +1,9 @@
+{
+    "name": "streamlit-docker",
+    "build": {
+      "dockerfile": "../Dockerfile"
+    },
+    "forwardPorts": [8501],
+    "postCreateCommand": "echo 'Ready to go!'"
+  }
+  
